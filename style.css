@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #173CF5;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.project-card {
+    position: relative;
+    background-color: lightblue;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #bbb;
+}
+.photo-container {
+            display: flex;
+            gap: 20px; 
+}
