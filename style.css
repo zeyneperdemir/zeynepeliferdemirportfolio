@@ -1,71 +1,82 @@
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #000; 
-    line-height: 1.2;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: whitesmoke;
-    color: white;
+    color: #111; /* Dark text color for contrast */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 header {
     text-align: center;
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000;
+    line-height: 1.2;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #555;
+}
+
+/* Projects Section */
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Her satırda otomatik olarak minimum 250px genişliğinde kartlar olacak */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
     gap: 30px;
     padding: 40px;
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
 }
 
 .project-card {
     position: relative;
     background-color: lightblue;
-    border-radius: 15px; /* Kartın köşelerini yuvarlatmak için */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Hafif bir gölge */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Hover sırasında büyütme */
+    transform: scale(1.05); /* Slight zoom effect */
     opacity: 0.9;
 }
 
 .project-card img {
     width: 100%;
-    height: 250px;
-    object-fit: cover; /* Görsellerin düzgün bir şekilde sığmasını sağlar */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensures images fill the space without distorting */
     transition: transform 0.3s ease;
 }
 
 .project-card:hover img {
-    transform: scale(1.1); /* Hover ile görselleri büyütme */
+    transform: scale(1.1); /* Zoom on hover */
 }
 
+/* Info section inside project card */
 .project-info {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Karanlık bir arka plan */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
 }
@@ -81,7 +92,3 @@ header {
     color: #bbb;
 }
 
-.photo-container {
-    display: flex;
-    gap: 20px;
-}
