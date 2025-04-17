@@ -28,34 +28,35 @@ header h1 {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Her satırda otomatik olarak minimum 250px genişliğinde kartlar olacak */
     gap: 30px;
-    padding: 0 20px;
+    padding: 40px;
     width: 100%;
 }
 
 .project-card {
     position: relative;
     background-color: lightblue;
-    border-radius: 10px;
+    border-radius: 15px; /* Kartın köşelerini yuvarlatmak için */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Hafif bir gölge */
     overflow: hidden;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Hover sırasında büyütme */
     opacity: 0.9;
 }
 
 .project-card img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: cover; /* Görsellerin düzgün bir şekilde sığmasını sağlar */
     transition: transform 0.3s ease;
 }
 
 .project-card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Hover ile görselleri büyütme */
 }
 
 .project-info {
@@ -63,7 +64,7 @@ header h1 {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* Karanlık bir arka plan */
     padding: 20px;
     border-radius: 10px;
 }
@@ -78,32 +79,8 @@ header h1 {
     font-size: 1rem;
     color: #bbb;
 }
+
 .photo-container {
-            display: flex;
-            gap: 20px; 
-}
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 40px;
-}
-
-.project-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.project-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover img {
-    transform: scale(1.1);
+    display: flex;
+    gap: 20px;
 }
