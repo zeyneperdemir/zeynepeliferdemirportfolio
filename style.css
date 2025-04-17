@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem; /* Dengeli ve göze hoş */
+    font-weight: 600; /* Bir tık daha ince */
+    letter-spacing: 1px; /* Uyumlu */
+    color: #173CF5;
+    line-height: 1.2;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: whitesmoke;
