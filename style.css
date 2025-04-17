@@ -6,9 +6,9 @@
 
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 5rem; /* Dengeli ve göze hoş */
-    font-weight: 600; /* Bir tık daha ince */
-    letter-spacing: 1px; /* Uyumlu */
+    font-size: 5rem; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
     color: #173CF5;
     line-height: 1.2;
 }
